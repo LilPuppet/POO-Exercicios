@@ -1,0 +1,24 @@
+modelo reserva
+
+inicio do modelo
+    inicio dos dados
+        texto nomeHospede
+        texto[] acompanhantes
+        int tempoEstadia
+        int numQuarto
+        
+
+    fim dos dados
+
+operação setDelta()
+    inicio
+        delta = pow(b,2)-4*a*c
+    fim
+
+operação setBhaskara()
+    inicio
+        bhaskaraMais = (-b + pow(delta))/2*a
+        bhaskaraMenos = (-b - pow(delta))/2*a
+    fim
+
+fim do modelo
