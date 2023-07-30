@@ -1,6 +1,6 @@
 public class Q21{
     public static void main (String [] args){
-        int n = 7;
+        int n = 8;
  
         if (primo(n, 2))
             System.out.println("Oso primo");
