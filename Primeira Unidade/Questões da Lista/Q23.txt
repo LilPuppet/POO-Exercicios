@@ -1,0 +1,46 @@
+
+modelo Lâmpada
+
+inicio do modelo
+    inicio dos dados
+        texto tipo_lâmpada
+        texto tamanho_lâmpada
+        texto fabricante
+        float potência
+        float preço
+        boolean ligaDesliga
+    fim dos dados
+
+operação lampadaLigada()
+    inicio
+    ligaDesliga = true;
+    fim
+
+operação lampadaDesligada()
+    inicio
+    ligaDesliga = false;
+    fim
+
+operação realizarTeste()
+    inicio
+        lampadaLigada()
+            se ligaDesliga == true
+            lampadaDesligada()
+                se ligaDesliga == false
+                retorna "Lampada Funciona"
+        senão
+            retorna "Lampada Defeituosa"
+        fim se
+    fim
+
+operação mostraEstado()
+    inicio
+        se ligaDesliga == true
+            imprime "Lampada Acesa"
+        senão
+            imprime "Lâmpada Apagada"
+        fim se
+    fim
+
+fim do modelo
+

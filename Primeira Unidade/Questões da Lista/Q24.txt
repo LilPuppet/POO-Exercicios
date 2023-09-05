@@ -1,0 +1,45 @@
+modelo Time
+
+inicio do modelo
+    inicio dos dados
+        texto nomeTime
+        texto nomeTecnico
+        texto[] integrantes
+        texto podium
+        boolean subir = false
+        float pontuacao = 2
+        boolean classificacao = true
+        boolean vitoria
+    fim dos dados
+
+operação setPontuacao()
+    inicio
+        se vitoria == true
+            pontuacao++
+        senao
+            pontuacao--
+    fim
+
+operação eliminacao()
+    inicio
+        se pontuacao ==0
+            classificacao ==false
+        senao se pontuacao == 3
+            imprime "subiu de podium"
+            subir = true
+        fim se
+        
+operação trocaPodium()
+    inicio
+        se podium == "Eliminatórias" && subir = true
+            podium = "Quartas de Final"
+        senao se podium == "Quartas de final" && subir = true
+            podium = "Semifinais"
+        senao se podium == "Semifinais" && subir == true
+            podium == "Finais"
+        senao se podium == "Finais" && subir == true
+            podium == "Vencedor"
+        fim se
+    fim
+
+fim do modelo
