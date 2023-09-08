@@ -1,16 +1,16 @@
 public class Prefeito extends Politico {
-    private String cidadeRepresentada;
+    private String cidade;
 
-    public Prefeito(int cpf, int rg, String nome, String partido, int numPartido, String cidadeRepresentada){
+    public Prefeito(int cpf, int rg, String nome, String partido, int numPartido, String cidade){
         super(cpf, rg, nome, partido, numPartido);
-        this.cidadeRepresentada = cidadeRepresentada;
+        this.cidade = cidade;
     }
 
-    public String getCidadeRepresentada() {
-        return cidadeRepresentada;
+    public String getCidade() {
+        return cidade;
     }
 
-    public void setCidadeRepresentada(String cidadeRepresentada) {
-        this.cidadeRepresentada = cidadeRepresentada;
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
     }
 }

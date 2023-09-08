@@ -1,16 +1,16 @@
 public class Governador extends Politico {
-    private String estadoRepresentado;
+    private String estado;
 
-    public Governador(int cpf, int rg, String nome, String partido, int numPartido, String estadoRepresentado){
+    public Governador(int cpf, int rg, String nome, String partido, int numPartido, String estado){
         super(cpf, rg, nome, partido, numPartido);
-        this.estadoRepresentado = estadoRepresentado;
+        this.estado = estado;
     }
 
-    public String getEstadoRepresentado() {
-        return estadoRepresentado;
+    public String getEstado() {
+        return estado;
     }
 
-    public void setEstadoRepresentado(String estadoRepresentado) {
-        this.estadoRepresentado = estadoRepresentado;
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }
