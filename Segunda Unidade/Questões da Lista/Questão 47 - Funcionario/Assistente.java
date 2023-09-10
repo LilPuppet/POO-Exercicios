@@ -13,6 +13,10 @@ public class Assistente extends Funcionario{
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
+
+    public double ganhoAnual(){
+        return getSalario() * 13; //por causa do 13°
+    }
     
     @Override
     
